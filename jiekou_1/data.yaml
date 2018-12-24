@@ -1,0 +1,43 @@
+#coding=utf-8
+post:
+ post1:
+
+   data: '{
+"key":"ca1eea6033eb4caea37ab50cd836badd",
+"info":"北京到上海的飞机",
+"userid":12345678
+}'
+
+   url: 'http://www.tuling123.com/openapi/api'
+   fangshi: 'POST'
+   code: 100000  #正确参数
+ post2:
+
+   data: '{
+"key":"ca1eea6033eb4caea37ab50cd836badd",
+"info": "",
+"userid":1.00
+}'
+   url: 'http://www.tuling123.com/openapi/api'
+   fangshi: 'POST'
+   code: 100000   #参数 以及标识信息错误
+ post3:
+
+   data: '{
+"key":"",
+"info":"北京到上海的飞机",
+"userid":12345678
+}'
+   fangshi: 'POST'
+   url: 'http://www.tuling123.com/openapi/api'
+   code: 100000   # key参数不对或者为空
+ post4:
+
+   data: '{
+"key":"ca1eea6033eb4caea37ab50cd836badd",
+"info":"北京到上海的飞机",
+"userid":12345678
+}'
+   fangshi: 'POST'
+   url: 'http://www.tuling123.com/openapi/api--'
+   code: 100000 #  url 错误
