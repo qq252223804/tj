@@ -127,16 +127,16 @@
 # #调用printme函数
 # printme('这里不传参数会报错')
 
-#可写函数说明
-# def printinfo( name, age ):
-#    "打印任何传入的字符串"
-#    print "Name: ", name
-#    print "Age ", age
-#
-#
-# #调用printinfo函数
-# printinfo( age=50, name="miki" )    #用关键字 不需要对应入参顺序
-# printinfo('mike',60)
+# 可写函数说明
+def printinfo( name, age ):
+   "打印任何传入的字符串"
+   print "Name: ", name
+   print "Age ", age
+
+
+#调用printinfo函数
+printinfo( age=50, name="miki" )    #用关键字 不需要对应入参顺序
+printinfo('mike',60)
 
 #可写函数说明
 # def printinfo( name, age = 35 ):
